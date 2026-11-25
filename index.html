@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff7f4" />
+    <title>Spendelora &mdash; Spend wisely. Live beautifully.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#dashboard" aria-label="Spendelora dashboard">
+        <span class="brand-logo"><img src="Spendelora Logo.png" alt="Spendelora — Spend wisely. Live beautifully." /></span>
+      </a>
+      <nav class="header-tools" aria-label="Dashboard utilities">
+        <span class="currency" aria-label="Currency: United States dollars">USD</span>
+        <a class="ask-link" href="#ask-spendelora">Ask Spendelora <span aria-hidden="true">&#8599;</span></a>
+      </nav>
+    </header>
+
+    <main id="dashboard" class="dashboard">
+      <section class="column overview" aria-label="Monthly overview">
+        <section class="total-card" aria-labelledby="month-heading">
+          <span class="eyebrow light">This month</span>
+          <h1 id="month-heading">November 2026</h1>
+          <p class="month-total money">$135.04</p>
+          <p class="total-note">Your cozy little spending snapshot.</p>
+          <span class="petal petal-one" aria-hidden="true"></span><span class="petal petal-two" aria-hidden="true"></span>
+        </section>
+
+        <section class="card budget-card" aria-labelledby="budget-heading">
+          <div class="section-heading">
+            <div><span class="eyebrow">Monthly budget</span><h2 id="budget-heading"><span class="money">$135.04</span> of <span class="money">$800.00</span></h2></div>
+            <span class="budget-state">On track</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Monthly budget used" aria-valuemin="0" aria-valuemax="800" aria-valuenow="135.04" aria-valuetext="$135.04 of $800.00 used, 16.88 percent"><span class="progress-fill budget-fill"></span></div>
+          <div class="progress-caption"><span>16.88% used</span><strong class="money">$664.96 left</strong></div>
+        </section>
+
+        <section class="stat-grid" aria-label="Quick stats for November 24">
+          <article class="stat-card"><span class="stat-icon rose" aria-hidden="true">&#10022;</span><span class="eyebrow">Daily average</span><strong class="money">$5.63</strong><small>as of Nov 24</small></article>
+          <article class="stat-card"><span class="stat-icon lavender" aria-hidden="true">&#9825;</span><span class="eyebrow">Top category</span><strong>Bills</strong><small>48.2% of spending</small></article>
+          <article class="stat-card"><span class="stat-icon peach" aria-hidden="true">&#10022;</span><span class="eyebrow">Expenses</span><strong>5</strong><small>little moments logged</small></article>
+        </section>
+
+        <aside class="insight-card" aria-label="Little insight"><span class="insight-icon" aria-hidden="true">&#10022;</span><p><strong>Little insight</strong><br />Bills is your top category this month.</p></aside>
+
+        <section class="card spending-card" aria-labelledby="where-heading">
+          <div class="section-heading compact"><div><span class="eyebrow">Spending story</span><h2 id="where-heading">Where it went</h2></div><span class="sample-label">November</span></div>
+          <div class="donut-layout">
+            <div class="donut" role="img" aria-label="Spending: Bills 48.2 percent, Groceries 31.7 percent, Dining 10.7 percent, Fun 7.4 percent, and Transport 2 percent."><div class="donut-center"><strong class="money">$135.04</strong><span>spent</span></div></div>
+            <ul class="legend" aria-label="Spending category amounts">
+              <li><span class="legend-dot groceries" aria-hidden="true"></span><span>Groceries <small class="money">$42.80 &middot; 31.7%</small></span></li>
+              <li><span class="legend-dot dining" aria-hidden="true"></span><span>Dining <small class="money">$14.50 &middot; 10.7%</small></span></li>
+              <li><span class="legend-dot transport" aria-hidden="true"></span><span>Transport <small class="money">$2.75 &middot; 2.0%</small></span></li>
+              <li><span class="legend-dot fun" aria-hidden="true"></span><span>Fun <small class="money">$9.99 &middot; 7.4%</small></span></li>
+              <li><span class="legend-dot bills" aria-hidden="true"></span><span>Bills <small class="money">$65.00 &middot; 48.2%</small></span></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="column details-column" aria-label="Spending details">
+        <section class="card months-card" aria-labelledby="months-heading">
+          <div class="section-heading compact"><div><span class="eyebrow">Sample data</span><h2 id="months-heading">Last 6 months</h2></div><span class="muted-note">Total spent</span></div>
+          <div class="bar-chart" role="img" aria-label="Monthly spending: June $95.00, July $120.00, August $82.00, September $120.00, October $60.20, November $135.04.">
+            <div class="bar-item"><span class="bar-value money">$95</span><span class="bar" style="--bar-height: 70%"></span><span>Jun</span></div>
+            <div class="bar-item"><span class="bar-value money">$120</span><span class="bar" style="--bar-height: 89%"></span><span>Jul</span></div>
+            <div class="bar-item"><span class="bar-value money">$82</span><span class="bar" style="--bar-height: 61%"></span><span>Aug</span></div>
+            <div class="bar-item"><span class="bar-value money">$120</span><span class="bar" style="--bar-height: 89%"></span><span>Sep</span></div>
+            <div class="bar-item"><span class="bar-value money">$60.20</span><span class="bar" style="--bar-height: 45%"></span><span>Oct</span></div>
+            <div class="bar-item current"><span class="bar-value money">$135.04</span><span class="bar" style="--bar-height: 100%"></span><span>Nov</span></div>
+          </div>
+        </section>
+
+        <section class="card category-card" aria-labelledby="category-heading">
+          <div class="section-heading compact"><div><span class="eyebrow">A little plan</span><h2 id="category-heading">Category budgets</h2></div></div>
+          <div class="category-budget"><div><span><i class="category-dot groceries" aria-hidden="true"></i>Groceries</span><strong class="money">$42.80 <em>of $250.00</em></strong></div><div class="progress-track slim" role="progressbar" aria-label="Groceries budget" aria-valuemin="0" aria-valuemax="250" aria-valuenow="42.80"><span class="progress-fill grocery-fill"></span></div></div>
+          <div class="category-budget"><div><span><i class="category-dot dining" aria-hidden="true"></i>Dining</span><strong class="money">$14.50 <em>of $120.00</em></strong></div><div class="progress-track slim" role="progressbar" aria-label="Dining budget" aria-valuemin="0" aria-valuemax="120" aria-valuenow="14.50"><span class="progress-fill dining-fill"></span></div></div>
+        </section>
+
+        <section class="card expenses-card" aria-labelledby="expenses-heading">
+          <div class="section-heading compact"><div><span class="eyebrow">Small moments</span><h2 id="expenses-heading">Recent expenses</h2></div><span class="sample-label">5 entries</span></div>
+          <div class="expense-list">
+            <p class="date-label">November 24</p>
+            <article class="expense-row"><span class="expense-icon groceries" aria-hidden="true">&#9830;</span><div><h3>Weekly market run</h3><p>Groceries</p></div><strong class="money">$42.80</strong></article>
+            <p class="date-label">November 23</p>
+            <article class="expense-row"><span class="expense-icon dining" aria-hidden="true">&#10022;</span><div><h3>Ramen with friends</h3><p>Dining</p></div><strong class="money">$14.50</strong></article>
+            <article class="expense-row"><span class="expense-icon transport" aria-hidden="true">&#8594;</span><div><h3>Bus to campus</h3><p>Transport</p></div><strong class="money">$2.75</strong></article>
+            <p class="date-label">November 21</p>
+            <article class="expense-row"><span class="expense-icon fun" aria-hidden="true">&#9834;</span><div><h3>Music streaming</h3><p>Fun</p></div><strong class="money">$9.99</strong></article>
+            <p class="date-label">November 19</p>
+            <article class="expense-row"><span class="expense-icon bills" aria-hidden="true">&#9741;</span><div><h3>Phone plan</h3><p>Bills</p></div><strong class="money">$65.00</strong></article>
+          </div>
+        </section>
+      </section>
+
+      <section class="previews" aria-label="Static demonstrations">
+        <details id="add-expense" class="card preview-panel">
+          <summary><span><span class="summary-icon" aria-hidden="true">+</span><strong>Add expense</strong> <small>&mdash; form preview</small></span><span class="chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="expense-form" role="group" aria-label="Static add expense form preview">
+            <div class="form-grid">
+              <label>Amount<input type="text" placeholder="$0.00" inputmode="decimal" /></label>
+              <label>Category<select><option>Choose a category</option><option>Groceries</option><option>Dining</option><option>Transport</option><option>Home</option><option>Health</option><option>Shopping</option><option>Fun</option><option>Bills</option><option>Other</option></select></label>
+              <label>Date<input type="date" value="2026-11-24" /></label>
+              <label>Repeats<select><option>Does not repeat</option><option>Weekly</option><option>Monthly</option></select></label>
+            </div>
+            <label>Note<input type="text" placeholder="What was this for?" /></label>
+            <button type="button" disabled>Save expense &mdash; demo</button>
+          </div>
+        </details>
+
+        <details id="ask-spendelora" class="card preview-panel chat-panel">
+          <summary><span><span class="summary-icon heart" aria-hidden="true">&#9829;</span><strong>Ask Spendelora</strong> <small>&mdash; chat preview</small></span><span class="chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="chat-content">
+            <p class="demo-disclaimer">Chat preview &mdash; sample conversation, not live AI.</p>
+            <div class="message user-message"><span>You</span><p>What did I spend the most on this month?</p></div>
+            <div class="message bot-message"><span>Spendelora</span><p>Bills is your largest category: <strong class="money">$65.00</strong>, about 48% of your spending this month.</p></div>
+            <div class="message-input"><input type="text" placeholder="Message preview" disabled aria-label="Message preview disabled" /><button type="button" disabled>Send</button></div>
+          </div>
+        </details>
+      </section>
+    </main>
+    <a class="floating-add" href="#add-expense" aria-label="Jump to add expense form preview"><span aria-hidden="true">+</span><span>Add expense</span></a>
+  </body>
+</html>
